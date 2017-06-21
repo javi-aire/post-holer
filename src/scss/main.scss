@@ -1,0 +1,22 @@
+@import 'reset.scss';
+@import 'bootstrap';
+
+.app {
+  &__title {
+    color: #FF5700;
+    font-weight: lighter;
+  }
+
+  &__description {
+    color: #e3e3e3;
+  }
+
+  &__search {
+    width: 45%;
+  }
+
+  &__search-btn {
+    background-color: #FF5700;
+  }
+}
+
