@@ -8,11 +8,56 @@
   <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-  <div class="app">
+  <div class="app container">
     <h1 class="app__title">post-holer</h1>
     <p class="app__description">Search Reddit for that post you sort of remember but 'forgot' to save</p>
-    <input type="search" class="app__search">
+    <input type="search" class="app__search app__search--input" placeholder="Enter Keywords Here">
+    <input type="search" class="app__search app__search--subreddit" placeholder="Enter Subreddit Here" required>
     <button class="btn app__search-btn" type="button">Search</button>
+  </div>
+  <div class="filters container">
+    <ul>
+      <li class="filters__setting">
+        <label class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input">
+          <span class="custom-control-indicator"></span>
+          <span class="custom-control-description">Hot</span>
+        </label>
+      </li>
+      <li class="filters__setting">
+        <label class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input">
+          <span class="custom-control-indicator"></span>
+          <span class="custom-control-description">New</span>
+        </label>
+      </li>
+      <li class="filters__setting">
+        <label class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input">
+          <span class="custom-control-indicator"></span>
+          <span class="custom-control-description">Top</span>
+        </label>
+      </li>
+      <li class="filters__setting">
+        <label class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input">
+          <span class="custom-control-indicator"></span>
+          <span class="custom-control-description">Comments?</span>
+        </label>
+      </li>
+      <li class="filters__setting">
+        <select name="results-limit">
+          <option value="---"># results</option>
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+          <option value="50">50</option>
+          <option value="100">100</option>
+          <option value="500">500</option>
+        </select>
+      </li>
+    </ul>
   </div>
   <script src="./js/app.js"></script>
 </body>
