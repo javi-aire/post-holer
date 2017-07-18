@@ -16,6 +16,10 @@
   }
 
   &__search {
+    & .random {
+      width: 75%;
+    }
+
     &--input{
       width: 45%;
     }
@@ -31,11 +35,16 @@
   }
 }
 
+.class1 + .class2 { font-family: Arial; }
+.class2 { font-family: Tahoma; }
+.class3 > .class2 { font-family: Georgia; }
+.class4 .class2 { font-family: "Tahoma"; }
+
 .filters {
     display: inline-block;
     width: 100%;
     text-align: center;
-
+    float: left;
     &__setting {
       display: inline;
       margin-right: 2.75em;
